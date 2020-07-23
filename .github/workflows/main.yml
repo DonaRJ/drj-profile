@@ -2,9 +2,9 @@ name: DRJ Profile
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/drj-profile-frontend/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
@@ -39,7 +39,7 @@ jobs:
 #         with:
 #           artifacts: "dist/angular-githubaction/*"
 #           token: ${{ secrets.TOKEN }}
-          
+
 #       - name: Build the site in the jekyll/builder container
 #         run: |
 #           docker run \
