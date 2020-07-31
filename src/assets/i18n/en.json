@@ -1,0 +1,11 @@
+{
+  "home": {
+    "greeting": "Hello I'm",
+    "name": "DONA RANI JOSE",
+    "designation": "Fullstack Software Developer",
+    "download_text": " Download CV"
+  },
+  "footer": {
+    "copyright": "All right reserved DRJ @ 2020"
+  }
+}
