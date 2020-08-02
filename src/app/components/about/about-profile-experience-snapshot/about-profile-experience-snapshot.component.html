@@ -1,0 +1,14 @@
+<div id="about-snapshot-section">
+    <div class="row text-white">
+        <div class="col-sm-6" *ngFor="let cardDetails of 'about.about_snapshot.card' | translate">
+            <div class="card mb-3">
+                <div class="card-header">{{cardDetails.title}}</div>
+                <div class="card-body text-justify">
+                    <ul *ngFor="let data of cardDetails.description">
+                        <li>{{data.list}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

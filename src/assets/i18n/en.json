@@ -5,6 +5,78 @@
     "designation": "Fullstack Software Developer",
     "download_text": " Download CV"
   },
+  "about": {
+    "title": "About Me",
+    "about_content": [
+      {
+        "content": "Hello, I’m a Dona, full stack software. Having hands own experience in developing web applications using Angular & Spring Boot. I consider myself as a passionate learner, responsible and very punctual. I completed all my works with my full satisfaction and also ensure my complete presence of mind for the particular work."
+      },
+      {
+        "content": "Before describing detailed about my professional interest and carrier goal, I'm a B-Tech graduate in Computer Science and Engineering and also completed a course and internship in J2EE. Currently I'm working as Software Developer at UST Global, Trivandrum. I'm looking forward to fly high to achieve a great carrier and happy life ahead by doing something good for which organization & great for my career."
+      }
+    ],
+    "about_snapshot": {
+      "card": [
+        {
+          "title": "Experience Summary",
+          "description": [
+            {
+              "list": "Java and Angular developer with 4 years of professional excellence."
+            },
+            {
+              "list": "Good understanding of object oriented concept."
+            },
+            {
+              "list": "Hands on experience developing web applications using Angular, Spring Boot and various other technologies."
+            },
+            {
+              "list": "Worked on different phases of Software Development Life Cycle."
+            },
+            {
+              "list": "Experience in handling complex projects and rapidly evolving requirements"
+            }
+          ]
+        },
+        {
+          "title": "Profile Snapshot",
+          "description": [
+            {
+              "list": "B-Tech Computer Science & Engineering graduate and completed an internship in J2EE."
+            },
+            {
+              "list": "Adaptable to work independently as well as a team member."
+            },
+            {
+              "list": "Ability to learn new technologies with minimal time period."
+            },
+            {
+              "list": "Able to work in high pressure and extended hours as per the project needs."
+            },
+            {
+              "list": "Willingness and ability to learn new technologies quickly."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "education": {
+    "title": "Educational Qualification",
+    "qualification": [
+      {
+        "name": "Bachelor of Technology",
+        "detail": "University: Mahatma Gandhi University, Kottayam, Kerala<br>Branch: Computer Science & Engineering<br>Year of passing: 2015"
+      },
+      {
+        "name": "Plus Two",
+        "detail": "University: State Board, Kerala<br>Branch: Science<br>Year of passing: 2011"
+      },
+      {
+        "name": "SSLC",
+        "detail": "University: Kerala State Board, Kerala<br>Year of passing: 2009"
+      }
+    ]
+  },
   "footer": {
     "copyright": "All right reserved DRJ @ 2020"
   }

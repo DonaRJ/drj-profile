@@ -1,0 +1,9 @@
+@import "../../../../styles.scss";
+#about-content-section {
+  .about-content {
+    p {
+      font-size: $font-size;
+      line-height: $font-line-height;
+    }
+  }
+}
