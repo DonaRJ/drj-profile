@@ -1,0 +1,14 @@
+@import "../../../../styles.scss";
+
+#technical-skills-section {
+  .card {
+    .card-header,
+    .card-body {
+      background-color: $card-bg-color;
+      color: $text-color;
+      border-color: $card-border;
+      font-size: $font-size;
+      line-height: $font-line-height;
+    }
+  }
+}

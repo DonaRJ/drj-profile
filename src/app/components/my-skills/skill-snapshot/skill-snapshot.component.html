@@ -1,0 +1,10 @@
+<div id="technical-skills-section">
+    <div class="card mb-3">
+        <div class="card-header" translate>skills.skill_snapshot.title</div>
+        <div class="card-body text-justify">
+            <ul *ngFor="let snapshot of 'skills.skill_snapshot.skill_list' | translate">
+                <li>{{snapshot.list}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
