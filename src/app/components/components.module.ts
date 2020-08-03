@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { AboutContentComponent } from './about/about-content/about-content.component';
 import { AboutProfileExperienceSnapshotComponent } from './about/about-profile-experience-snapshot/about-profile-experience-snapshot.component';
 import { EducationalQualificationsComponent } from './educational-qualifications/educational-qualifications.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
+import { SkillGraphsComponent } from './my-skills/skill-graphs/skill-graphs.component';
+import { SkillSnapshotComponent } from './my-skills/skill-snapshot/skill-snapshot.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { EducationalQualificationsComponent } from './educational-qualifications
     AboutContentComponent,
     AboutProfileExperienceSnapshotComponent,
     EducationalQualificationsComponent,
+    MySkillsComponent,
+    SkillGraphsComponent,
+    SkillSnapshotComponent,
   ],
   imports: [CommonModule, ComponentsRoutingModule, SharedModule],
 })

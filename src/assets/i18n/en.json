@@ -77,6 +77,32 @@
       }
     ]
   },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Technical Skills",
+    "technical": [
+      { "skill": "Angular", "percent": 90 },
+      { "skill": "Web Technologies", "percent": 80 },
+      { "skill": "Java", "percent": 75 },
+      { "skill": "Spring Boot", "percent": 65 }
+    ],
+    "skill_snapshot": {
+      "title": "Technical Competencies",
+      "skill_list": [
+        { "list": "Languages: Core Java" },
+        { "list": "Web Technologies: JSP, HTML, CSS, Bootstrap, etc" },
+        { "list": "Distributed Technologies: JDBC" },
+        { "list": "Frameworks: Spring Boot, Angular 7/8/9" },
+        { "list": "Web/Application Servers: Apache Tomcat, Glassfish." },
+        { "list": "Database: MySQL(Basics), MongoDB(Basics)" },
+        {
+          "list": "Software IDE: Intellij, Eclipse, NetBeans, Visual Studio Code"
+        },
+        { "list": "Version Control System: Git" },
+        { "list": "Operating Systems: Windows7/8/10" }
+      ]
+    }
+  },
   "footer": {
     "copyright": "All right reserved DRJ @ 2020"
   }

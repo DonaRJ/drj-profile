@@ -1,0 +1,19 @@
+<div class="row mb-3">
+    <div class="col-sm-6">
+        <h4 class="text-white text-center my-3 py-3" translate>skills.subtitle</h4>
+        <p *ngFor="let skills of 'skills.technical' | translate">
+            {{skills.skill}}
+            <ngb-progressbar type="warning" [value]="skills.percent" [striped]="true" [animated]="true">
+                <i>{{skills.percent+'%'}}</i>
+            </ngb-progressbar>
+        </p>
+    </div>
+    <div class="col-sm-6 text-white mb-3">
+        <h4 class="text-white text-center my-3 py-3" translate>Professional Skills</h4>
+        <div class="chart-wrapper">
+            <canvas baseChart [options]="chartOptions" [data]="doughnutChartData" [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType" [colors]="doughnutChartColors" [legend]=true>
+            </canvas>
+        </div>
+    </div>
+</div>
