@@ -103,6 +103,26 @@
       ]
     }
   },
+  "experience": {
+    "title": "Work Experience",
+    "experience_details": [
+      {
+        "company": "UST Global",
+        "designation": "Designation: Software Developer",
+        "duration": "Duration: June 2018 - Present"
+      },
+      {
+        "company": "Cherrystay",
+        "designation": "Designation: Software Engineer",
+        "duration": "Duration: June 2017 - May 2018"
+      },
+      {
+        "company": "Viaps Technology",
+        "designation": "Designation: Software Engineer",
+        "duration": "Duration: May 2016 - May 2017"
+      }
+    ]
+  },
   "footer": {
     "copyright": "All right reserved DRJ @ 2020"
   }
