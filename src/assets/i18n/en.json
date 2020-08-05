@@ -123,6 +123,164 @@
       }
     ]
   },
+  "portfolio": {
+    "title": "Projects Handled",
+    "recent_projects": [
+      {
+        "name": { "label": "Name: ", "value": "MyEquifax" },
+        "organization": { "label": "Organization: ", "value": "UST Global" },
+        "client": { "label": "Client: ", "value": "Equifax" },
+        "role": { "label": "Role: ", "value": "Fullstack Software Developer" },
+        "duration": {
+          "label": "Duration: ",
+          "value": "2020 January - Present"
+        },
+        "project_summary": {
+          "label": "Project Summary: ",
+          "value": "Equifax is an American multinational credit reporting agency. MyEquifax web application is mainly used to manage security freeze, fraud alert and disputes, and access free credit reports and myEquifax products. Amoung all these our team handles fraud alert modules."
+        },
+        "responsibilities": {
+          "label": "Responsibilities: ",
+          "value": [
+            { "list": "Implementing Business logic" },
+            { "list": "Front end design and development in Angular 8." },
+            {
+              "list": "Front end unit testing using Jasmine/Karma, end-to-end testing using protractor, and writing automation test using cucumber using gherkins language"
+            },
+            {
+              "list": "Being part of daily standup calls and Weekly Grooming calls."
+            },
+            {
+              "list": "Understanding the requirements and Coding with respect to wireframes discussions from grooming call."
+            }
+          ]
+        },
+        "skills_used": {
+          "label": "Skills Used: ",
+          "value": "Spring Boot, Angular 8, SQL, Bootstrap, Html 5, Protractor, Jasmine/Karma unit testing etc"
+        },
+        "color": ""
+      },
+      {
+        "name": { "label": "Name: ", "value": "Agile Metrics Dashboard" },
+        "organization": { "label": "Organization: ", "value": "UST Global" },
+        "client": { "label": "Client: ", "value": "Internal Project" },
+        "role": { "label": "Role: ", "value": "Software Developer" },
+        "duration": {
+          "label": "Duration: ",
+          "value": "2019 January - 2019 December"
+        },
+        "project_summary": {
+          "label": "Project Summary: ",
+          "value": "To create a platform to visualize Agile metrics at an Enterprise level. Most of the tools like JIRA, TFS or Trello mainly focus on a particular project’s standpoint. The goal is to have a common dashboard at a portfolio level which will showcase the reports at a different levels of abstraction(Account, Business Unit, Project level)."
+        },
+        "responsibilities": {
+          "label": "Responsibilities: ",
+          "value": [
+            { "list": "Worked extensively in Agile development process." },
+            {
+              "list": "Responsible for frontend optimization and performance techniques."
+            },
+            {
+              "list": "Responsible for frontend as well as backend development."
+            },
+            {
+              "list": "Responsible for different business meetings with clients and daily reporting to the project manager."
+            }
+          ]
+        },
+        "skills_used": {
+          "label": "Skills Used: ",
+          "value": "Spring Boot, Angular 7, Chart Js, ECharts, Nebular, Mongo DB, Bootsrap, Html 5 etc."
+        },
+        "color": "blue"
+      },
+      {
+        "name": {
+          "label": "Name: ",
+          "value": "Equifax Motor Insurance"
+        },
+        "organization": { "label": "Organization: ", "value": "UST Global" },
+        "client": { "label": "Client: ", "value": "Equifax" },
+        "role": { "label": "Role: ", "value": "Software Developer" },
+        "duration": {
+          "label": "Duration: ",
+          "value": "2018 June - December 2018"
+        },
+        "project_summary": {
+          "label": "Project Summary: ",
+          "value": ""
+        },
+        "responsibilities": {
+          "label": "Responsibilities: ",
+          "value": [
+            { "list": "Implementing Business logic." },
+            {
+              "list": "Front end design and development in Angular 6 using PRIME NG components with unit testing in Karma/Jasmine."
+            },
+            {
+              "list": "Being part of daily standup calls and Weekly Grooming calls."
+            },
+            {
+              "list": "Understanding the requirements and Coding with respect to wireframes discussions from grooming call."
+            }
+          ]
+        },
+        "skills_used": {
+          "label": "Skills Used: ",
+          "value": "JAVA/J2EE, Spring, REST, Angular 5."
+        },
+        "color": "purple"
+      },
+      {
+        "name": { "label": "Name", "value": "Cherrystay" },
+        "organization": {
+          "label": "Organization: ",
+          "value": "Cherrystay Services Pvt Ltd"
+        },
+        "client": { "label": "Client: ", "value": "Cherrystay" },
+        "role": { "label": "Role: ", "value": "Software Engineer" },
+        "duration": { "label": "Duration: ", "value": "2017 June - 2018 May" },
+        "project_summary": {
+          "label": "Project Summary: ",
+          "value": "Cherrystay is a web application like TP Bazaar. It helps us to find places nearby Trivandrum for better home stay/PG/House for rent facility. This application uses various web technologies like Spring MVC, Rest, Angular JS, Hml, and uses AWS for deploying the application in cloud, JHipster for developing the wireframe of the application."
+        },
+        "responsibilities": {
+          "label": "Responsibilities: ",
+          "value": [
+            { "list": "Worked extensively in Agile development process." },
+            {
+              "list": "Responsible for frontend optimization."
+            },
+            {
+              "list": "Bug Fixing."
+            }
+          ]
+        },
+        "skills_used": {
+          "label": "Skills Used: ",
+          "value": "JAVA/J2EE, Spring, REST, Angular 5."
+        },
+        "color": "green"
+      },
+      {
+        "name": { "label": "Name: ", "value": "Office Administration" },
+        "organization": { "label": "Organization: ", "value": "Viaps" },
+        "client": { "label": "Client: ", "value": "Internal Project" },
+        "role": { "label": "Role: ", "value": "Software Engineer" },
+        "duration": { "label": "Duration: ", "value": "" },
+        "color": "blue"
+      },
+      {
+        "name": { "label": "Name: ", "value": "Admission Portal" },
+        "organization": { "label": "Organization: ", "value": "Viaps" },
+        "client": { "label": "Client: ", "value": "School" },
+        "role": { "label": "Role: ", "value": "Software Engineer" },
+        "duration": { "label": "Duration: ", "value": "" },
+        "color": "purple"
+      }
+    ]
+  },
   "footer": {
     "copyright": "All right reserved DRJ @ 2020"
   }

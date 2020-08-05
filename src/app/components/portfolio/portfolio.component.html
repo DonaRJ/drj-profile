@@ -1,0 +1,54 @@
+<div id="portfolio-section">
+    <div class="container">
+        <h2 class="card-title text-white text-center h2 my-3 py-3" translate>portfolio.title</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6"
+                *ngFor="let project of 'portfolio.recent_projects' | translate;let index=index">
+                <div class="serviceBox" [ngClass]="project.color">
+                    <div class="service-content">
+                        <h3 class="title">{{project.name.value}}</h3>
+                        <ul class="description text-left">
+                            <li>{{project.organization.label + project.organization.value}}</li>
+                            <li>{{project.client.label + project.client.value}}</li>
+                            <li>{{project.role.label + project.role.value}}</li>
+                            <li>{{project.duration.label + project.duration.value}}</li>
+                        </ul>
+                        <div class="service-icon">
+                            <button type="button" class="btn btn-light" (click)="openScrollableContent(content,index)">
+                                Know More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #content let-modal class="dark-modal">
+    <div class="modal-header">
+        <h4 class="modal-title h6">{{projectDetails?.name?.value}}</h4>
+        <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p><strong>{{projectDetails?.organization?.label}}</strong>{{projectDetails?.organization?.value}}</p>
+        <p><strong>{{projectDetails?.client?.label}}</strong>{{projectDetails?.client?.value}}</p>
+        <p><strong>{{projectDetails?.role?.label}}</strong>{{projectDetails?.role?.value}}</p>
+        <p><strong>{{projectDetails?.duration?.label}}</strong>{{projectDetails?.duration?.value}}</p>
+        <p><strong>{{projectDetails?.skills_used?.label}}</strong>{{projectDetails?.skills_used?.value}}</p>
+        <p><strong>{{projectDetails?.project_summary?.label}}</strong>{{projectDetails?.project_summary?.value}}</p>
+        <span *ngIf="projectDetails?.responsibilities?.value.length>0">
+            <strong>{{projectDetails?.responsibilities?.label}}</strong>
+            <ul *ngFor="let value of projectDetails?.responsibilities?.value">
+                <li>
+                    {{value.list}}
+                </li>
+            </ul>
+        </span>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>
