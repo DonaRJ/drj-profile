@@ -12,6 +12,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { SkillGraphsComponent } from './my-skills/skill-graphs/skill-graphs.component';
 import { SkillSnapshotComponent } from './my-skills/skill-snapshot/skill-snapshot.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ExperienceComponent } from './experience/experience.component';
     SkillGraphsComponent,
     SkillSnapshotComponent,
     ExperienceComponent,
+    PortfolioComponent,
   ],
   imports: [CommonModule, ComponentsRoutingModule, SharedModule],
 })
