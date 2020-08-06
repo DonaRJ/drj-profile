@@ -281,6 +281,15 @@
       }
     ]
   },
+  "contact": {
+    "title": "Contact Me",
+    "form_button": "Send Message",
+    "description": {
+      "email": "donarani1993@gmail.com",
+      "phone": "+91 7034603579",
+      "address": "Vadakkemachithanniyel House,<br>Vayala PO,<br>Kottayam,<br>Kerala,<br>Pin: 686587"
+    }
+  },
   "footer": {
     "copyright": "All right reserved DRJ @ 2020"
   }

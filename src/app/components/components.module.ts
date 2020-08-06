@@ -13,6 +13,7 @@ import { SkillGraphsComponent } from './my-skills/skill-graphs/skill-graphs.comp
 import { SkillSnapshotComponent } from './my-skills/skill-snapshot/skill-snapshot.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SkillSnapshotComponent,
     ExperienceComponent,
     PortfolioComponent,
+    ContactComponent,
   ],
   imports: [CommonModule, ComponentsRoutingModule, SharedModule],
 })
