@@ -6,9 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartsModule } from 'ng2-charts';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [NavbarComponent],
+  declarations: [NavbarComponent, FooterComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -21,6 +22,7 @@ import { ChartsModule } from 'ng2-charts';
     TranslateModule,
     NgbProgressbarModule,
     ChartsModule,
+    FooterComponent
   ],
 })
 export class SharedModule {}
