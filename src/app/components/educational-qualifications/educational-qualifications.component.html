@@ -1,58 +1,15 @@
 <div class="container my-3" id="educational-qualifiations">
-    <div class="mx-3 text-white">
-        <h2 class="card-title text-center h2 my-3 py-3" translate>education.title</h2>
-        <!--first section-->
-        <div class="row align-items-center how-it-works d-flex">
-            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-                <div class="circle font-weight-bold">1</div>
-            </div>
-            <div class="col-10">
-                <h5 translate>education.qualification.0.name</h5>
-                <p [innerHtml]="'education.qualification.0.detail' | translate"></p>
-            </div>
-        </div>
-        <!--path between 1-2-->
-        <div class="row timeline">
-            <div class="col-2">
-                <div class="corner top-right"></div>
-            </div>
-            <div class="col-8">
-                <hr />
-            </div>
-            <div class="col-2">
-                <div class="corner left-bottom"></div>
-            </div>
-        </div>
-        <!--second section-->
-        <div class="row align-items-center justify-content-end how-it-works d-flex">
-            <div class="col-10 text-right">
-                <h5 translate>education.qualification.1.name</h5>
-                <p [innerHtml]="'education.qualification.1.detail' | translate"></p>
-            </div>
-            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-                <div class="circle font-weight-bold">2</div>
-            </div>
-        </div>
-        <!--path between 2-3-->
-        <div class="row timeline">
-            <div class="col-2">
-                <div class="corner right-bottom"></div>
-            </div>
-            <div class="col-8">
-                <hr />
-            </div>
-            <div class="col-2">
-                <div class="corner top-left"></div>
-            </div>
-        </div>
-        <!--third section-->
-        <div class="row align-items-center how-it-works d-flex">
-            <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
-                <div class="circle font-weight-bold">3</div>
-            </div>
-            <div class="col-10">
-                <h5 translate>education.qualification.2.name</h5>
-                <p [innerHtml]="'education.qualification.2.detail' | translate"></p>
+    <h2 class="card-title text-center text-white h2 my-3 py-3" translate>education.title</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <div class="timeline" *ngFor="let qualification of 'education.qualification' | translate">
+                    <a href="#" class="timeline-content">
+                        <span class="timeline-year">{{qualification.year_of_passing}}</span>
+                        <h3 class="title">{{qualification.name}}</h3>
+                        <p class="description" [innerHtml]="qualification.detail"></p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

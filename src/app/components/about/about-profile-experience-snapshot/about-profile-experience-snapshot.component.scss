@@ -3,7 +3,7 @@
   .card {
     .card-header,
     .card-body {
-      background-color: $card-bg-color;
+      background: linear-gradient(to left bottom, #1e567d, #0d70b4);
       color: $text-color;
       border-color: $card-border;
       font-size: $font-size;
