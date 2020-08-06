@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
-import { MultiDataSet, Label, Color } from 'ng2-charts';
-import { preserveWhitespacesDefault } from '@angular/compiler';
+import { Label, Color } from 'ng2-charts';
 
 @Component({
   selector: 'app-skill-graphs',
@@ -17,7 +16,7 @@ export class SkillGraphsComponent implements OnInit {
   doughnutChartData = [55, 25, 20];
   doughnutChartType: ChartType = 'doughnut';
   doughnutChartColors: Color[] = [
-    { backgroundColor: ['#ffca2b', '#31e42e', '#17a9ff'] },
+    { backgroundColor: ['#e71873', '#0d70b4', '#fdcd00'] },
   ];
   labelColor = '#fff';
   chartOptions = {

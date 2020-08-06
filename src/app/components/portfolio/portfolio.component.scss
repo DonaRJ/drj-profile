@@ -7,13 +7,13 @@
     position: relative;
   }
   .serviceBox .service-content {
-    background: linear-gradient(to left bottom, #fd9743, #ff018f);
+    background: linear-gradient(to left bottom, #f28d00, #fdcd00);
     padding: 15px;
     border-radius: 0 30px 30px 0;
     box-shadow: 20px 0 20px -20px rgba(0, 0, 0, 0.5) inset;
   }
   .serviceBox .title {
-    color: #ff018f;
+    color: #f28d00;
     background: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -29,32 +29,17 @@
     line-height: 24px;
     margin: 0 0 20px;
   }
-  .serviceBox.blue:after {
-    background: #6558ff;
-  }
   .serviceBox.blue .service-content {
-    background: linear-gradient(to left bottom, #02d7dd, #6558ff);
+    background: linear-gradient(to left bottom, #1e567d, #0d70b4);
   }
   .serviceBox.blue .title {
-    color: #6558ff;
-  }
-  .serviceBox.purple:after {
-    background: #910090;
+    color: #0d70b4;
   }
   .serviceBox.purple .service-content {
-    background: linear-gradient(to left bottom, #f83abe, #910090);
+    background: linear-gradient(to left bottom, #a2175b, #e71873);
   }
   .serviceBox.purple .title {
-    color: #910090;
-  }
-  .serviceBox.green:after {
-    background: #00ae85;
-  }
-  .serviceBox.green .service-content {
-    background: linear-gradient(to left bottom, #02f4c1, #00ae85);
-  }
-  .serviceBox.green .title {
-    color: #00ae85;
+    color: #a2175b;
   }
   @media only screen and (max-width: 990px) {
     .serviceBox {

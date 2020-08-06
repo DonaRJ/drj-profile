@@ -65,14 +65,17 @@
     "qualification": [
       {
         "name": "Bachelor of Technology",
+        "year_of_passing": 2015,
         "detail": "University: Mahatma Gandhi University, Kottayam, Kerala<br>Branch: Computer Science & Engineering<br>Year of passing: 2015"
       },
       {
         "name": "Plus Two",
+        "year_of_passing": "2011",
         "detail": "University: State Board, Kerala<br>Branch: Science<br>Year of passing: 2011"
       },
       {
         "name": "SSLC",
+        "year_of_passing": "2009",
         "detail": "University: Kerala State Board, Kerala<br>Year of passing: 2009"
       }
     ]
@@ -261,7 +264,7 @@
           "label": "Skills Used: ",
           "value": "JAVA/J2EE, Spring, REST, Angular 5."
         },
-        "color": "green"
+        "color": ""
       },
       {
         "name": { "label": "Name: ", "value": "Office Administration" },
