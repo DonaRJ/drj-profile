@@ -42,9 +42,9 @@ jobs:
           ng lint --fix
 
       - name: Build Develop Branch
-          env:
-            BASE_BRANCH: develop
-          run : |
+        env:
+          BASE_BRANCH: develop
+        run : |
             ng build --prod --aot
 
       - name: Build and Deploy
