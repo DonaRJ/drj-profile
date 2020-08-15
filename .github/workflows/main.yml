@@ -41,8 +41,13 @@ jobs:
         run : |
           ng lint --fix
 
+      - name: Build Develop Branch
+          env:
+            BASE_BRANCH: develop
+          run : |
+            ng build --prod --aot
+
       - name: Build and Deploy
-        if: {{ github.ref == 'ref/head/master' }}
           uses: JamesIves/github-pages-deploy-action@releases/v2
           env:
             ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -50,9 +55,6 @@ jobs:
             BRANCH: gh-pages
             FOLDER: dist/drj-profile
             BUILD_SCRIPT: npm run build -- --prod
-        if: {{ github.ref == 'ref/head/develop' }}
-          run : |
-            ng build --prod --aot
 #       - name: Push Build to Releases
 #         uses: ncipollo/release-action@v1
 #         with:
