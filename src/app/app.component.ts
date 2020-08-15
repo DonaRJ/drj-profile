@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'DRJ Profile';
+  title = 'drj-profile';
 
   constructor(public translateService: TranslateService) {
     translateService.addLangs(['en', 'fr']);

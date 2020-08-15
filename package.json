@@ -1,5 +1,5 @@
 {
-  "name": "drj-profile-frontend",
+  "name": "drj-profile",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

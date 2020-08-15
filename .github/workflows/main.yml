@@ -5,6 +5,10 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
 
 jobs:
   build:
@@ -29,11 +33,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: npm install and npm run build
-        run: |
-          npm i
-          npm run build:prod
-
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v2
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BASE_BRANCH: master
+          BRANCH: gh-pages
+          FOLDER: dist/drj-profile
+          BUILD_SCRIPT: npm install && npm run build -- --prod
 #       - name: Push Build to Releases
 #         uses: ncipollo/release-action@v1
 #         with:
