@@ -42,7 +42,7 @@ jobs:
           ng lint --fix
 
       - name: Build Develop Branch
-        if: github.ref == 'refs/heads/develop'
+        if: github.ref == 'develop'
         env:
           BASE_BRANCH: develop
         run: |
