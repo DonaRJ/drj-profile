@@ -48,6 +48,7 @@ jobs:
           ng build --prod --aot
 
       - name: Build and Deploy
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
