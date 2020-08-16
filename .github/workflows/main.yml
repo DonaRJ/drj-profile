@@ -43,9 +43,8 @@ jobs:
 
       - name: Build and Deploy Develop
         if: github.ref == 'refs/heads/develop'
-        env:
-          BASE_BRANCH: develop
-          BUILD_SCRIPT: ng build --prod
+        run: |
+          ng build --prod
 
       - name: Build and Deploy Production
         if: github.ref == 'refs/heads/master'
