@@ -43,8 +43,8 @@ jobs:
 
       - name: Build Develop Branch
         if: github.base_ref == 'refs/heads/develop'
-        # env:
-        #   BASE_BRANCH: develop
+        env:
+          BASE_BRANCH: develop
         run: |
           ng build --prod --aot
 
