@@ -41,15 +41,14 @@ jobs:
         run: |
           ng lint --fix
 
-      - name: Build Develop Branch
-        if: github.base_ref == 'refs/heads/develop'
+      - name: Build and Deploy Develop
+        if: github.ref == 'refs/heads/develop'
         env:
           BASE_BRANCH: develop
-        run: |
-          ng build --prod --aot
+          BUILD_SCRIPT: ng build --prod
 
-      - name: Build and Deploy
-        if: github.base_ref == 'refs/heads/master'
+      - name: Build and Deploy Production
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -57,6 +56,20 @@ jobs:
           BRANCH: gh-pages
           FOLDER: dist/drj-profile
           BUILD_SCRIPT: npm run build -- --prod
+      # - name: Build and Deploy Develop
+      #   if: github.base_ref == 'refs/heads/develop'
+      #   run: |
+      #     ng build --prod --aot
+      # - name: Build and Deploy Production
+      #   if: github.base_ref == 'refs/heads/master'
+      #   uses: JamesIves/github-pages-deploy-action@releases/v2
+      #   env:
+      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      #     BASE_BRANCH: master
+      #     BRANCH: gh-pages
+      #     FOLDER: dist/drj-profile
+      #     BUILD_SCRIPT: npm run build -- --prod
+# ===========================================================
 #       - name: Push Build to Releases
 #         uses: ncipollo/release-action@v1
 #         with:
