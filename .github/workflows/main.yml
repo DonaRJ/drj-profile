@@ -55,7 +55,7 @@ jobs:
       #     ng build --prod
 
       - name: Build and Deploy Production
-        if: ${{github.ref == 'refs/heads/master'}}
+        if: github.ref == 'refs/heads/develop'
         uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
