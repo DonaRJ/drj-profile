@@ -39,7 +39,7 @@ jobs:
 
       - name: Build and Deploy Develop
         if: (github.event_name == 'pull_request' || github.event_name == 'push') && contains(github.base_ref, 'develop')
-        run: ng build --prod
+        run: npm run build:prod
 
       - name: Build and Deploy Production
         if: (github.event_name == 'pull_request' || github.event_name == 'push') && contains(github.base_ref, 'master')
@@ -49,7 +49,7 @@ jobs:
           BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: dist/drj-profile
-          BUILD_SCRIPT: npm run build -- --prod
+          BUILD_SCRIPT: npm run build:prod
 # ===========================================================
 #       - name: Push Build to Releases
 #         uses: ncipollo/release-action@v1
