@@ -42,7 +42,7 @@ jobs:
           ng lint --fix
 
       - name: Build and Deploy Develop
-        if: (github.event_name == 'pull_request' || github.event_name == 'push') && github.base_ref == 'refs/heads/develop'
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
         env:
           branch_name: ${{ github.ref }}
           target: ${{github.base_ref}}
