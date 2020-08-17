@@ -50,7 +50,7 @@ jobs:
       #     ng build --prod
 
       - name: Build and Deploy Develop
-        if: "'refs/heads/master' == github.ref || startsWith(github.ref, 'refs/tags/')"
+        if: "'refs/heads/develop' == github.ref || startsWith(github.ref, 'refs/tags/')"
         run: ng build --prod
 
       - name: Build and Deploy Production
