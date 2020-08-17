@@ -41,18 +41,18 @@ jobs:
         run: |
           ng lint --fix
 
-      - name: Build and Deploy Develop
-        if: github.event_name == 'pull_request' || github.event_name == 'push'
-        env:
-          branch_name: ${{ github.ref }}
-          target: ${{github.base_ref}}
-        run: |
-          ng build --prod
-
       # - name: Build and Deploy Develop
-      #   if: ${{github.base_ref == 'refs/heads/develop'}}
+      #   if: github.event_name == 'pull_request' || github.event_name == 'push'
+      #   env:
+      #     branch_name: ${{ github.ref }}
+      #     target: ${{github.base_ref}}
       #   run: |
       #     ng build --prod
+
+      - name: Build and Deploy Develop
+        if: ${{github.base_ref == 'refs/remotes/origin/develop'}}
+        run: |
+          ng build --prod
 
       - name: Build and Deploy Production
         if: github.ref == 'refs/heads/develop'
