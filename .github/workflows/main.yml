@@ -48,7 +48,7 @@ jobs:
           BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: dist/drj-profile
-          BUILD_SCRIPT: npm run build:prod
+          BUILD_SCRIPT: ng build --prod --base-href="/drj-profile/"
 # ===========================================================
 #       - name: Push Build to Releases
 #         uses: ncipollo/release-action@v1
