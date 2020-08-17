@@ -29,10 +29,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Angular Install
-        run: |
-          npm i -g @angular/cli
-
       - name: Install Packages
         run: |
           npm i
@@ -41,20 +37,12 @@ jobs:
         run: |
           ng lint --fix
 
-      # - name: Build and Deploy Develop
-      #   if: github.event_name == 'pull_request' || github.event_name == 'push'
-      #   env:
-      #     branch_name: ${{ github.ref }}
-      #     target: ${{github.base_ref}}
-      #   run: |
-      #     ng build --prod
-
       - name: Build and Deploy Develop
         if: (github.event_name == 'pull_request' || github.event_name == 'push') && contains(github.base_ref, 'develop')
         run: ng build --prod
 
       - name: Build and Deploy Production
-        if: github.ref == 'refs/heads/develop'
+        if: (github.event_name == 'pull_request' || github.event_name == 'push') && contains(github.base_ref, 'master')
         uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -62,19 +50,6 @@ jobs:
           BRANCH: gh-pages
           FOLDER: dist/drj-profile
           BUILD_SCRIPT: npm run build -- --prod
-      # - name: Build and Deploy Develop
-      #   if: github.base_ref == 'refs/heads/develop'
-      #   run: |
-      #     ng build --prod --aot
-      # - name: Build and Deploy Production
-      #   if: github.base_ref == 'refs/heads/master'
-      #   uses: JamesIves/github-pages-deploy-action@releases/v2
-      #   env:
-      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #     BASE_BRANCH: master
-      #     BRANCH: gh-pages
-      #     FOLDER: dist/drj-profile
-      #     BUILD_SCRIPT: npm run build -- --prod
 # ===========================================================
 #       - name: Push Build to Releases
 #         uses: ncipollo/release-action@v1
