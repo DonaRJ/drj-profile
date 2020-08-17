@@ -42,7 +42,7 @@ jobs:
           ng lint --fix
 
       - name: Build and Deploy Develop
-        if: ${{github.ref == 'refs/heads/develop'}}
+        if: ${{github.base_ref == 'refs/heads/develop'}}
         run: |
           ng build --prod
 
