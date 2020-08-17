@@ -50,7 +50,7 @@ jobs:
       #     ng build --prod
 
       - name: Build and Deploy Develop
-        if: ${{github.base_ref == 'refs/remotes/origin/develop'}}
+        if: github.base_ref == 'refs/remotes/origin/develop'
         run: |
           ng build --prod
 
