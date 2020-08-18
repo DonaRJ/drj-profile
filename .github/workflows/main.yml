@@ -46,19 +46,6 @@ jobs:
           name: deploy_dist
           path: dist
 
-      # - name: Build and Deploy Develop
-      #   if: (github.event_name == 'pull_request' || github.event_name == 'push') && contains(github.base_ref, 'develop')
-      #   run: npm run build:prod
-      # - name: Build and Deploy Production
-      #   if: (github.event_name == 'pull_request' || github.event_name == 'push') && contains(github.base_ref, 'master')
-      #   uses: JamesIves/github-pages-deploy-action@releases/v2
-      #   env:
-      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #     BASE_BRANCH: master
-      #     BRANCH: gh-pages
-      #     FOLDER: dist/drj-profile
-      #     BUILD_SCRIPT: npm run build:prod
-
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -76,15 +63,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: deploy_dist/drj-profile
-# ===========================================================
-#       - name: Push Build to Releases
-#         uses: ncipollo/release-action@v1
-#         with:
-#           artifacts: "dist/angular-githubaction/*"
-#           token: ${{ secrets.TOKEN }}
-
-#       - name: Build the site in the jekyll/builder container
-#         run: |
-#           docker run \
-#           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-#           jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
