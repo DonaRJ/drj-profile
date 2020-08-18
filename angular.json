@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "drj-profile-frontend": {
+    "drj-profile": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/drj-profile-frontend",
+            "outputPath": "dist/drj-profile",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "drj-profile-frontend:build"
+            "browserTarget": "drj-profile:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "drj-profile-frontend:build:production"
+              "browserTarget": "drj-profile:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "drj-profile-frontend:build"
+            "browserTarget": "drj-profile:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "drj-profile-frontend:serve"
+            "devServerTarget": "drj-profile:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "drj-profile-frontend:serve:production"
+              "devServerTarget": "drj-profile:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "drj-profile-frontend"
+  "defaultProject": "drj-profile"
 }
