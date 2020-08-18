@@ -1,8 +1,8 @@
 name: DRJ Profile
 
 on:
-  push:
-    branches: [develop, master]
+  # push:
+  #   branches: [develop, master]
   pull_request:
     branches: [develop, master]
 
