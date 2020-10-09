@@ -14,6 +14,8 @@ import { SkillSnapshotComponent } from './my-skills/skill-snapshot/skill-snapsho
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { MessageFormComponent } from './contact/message-form/message-form.component';
+import { ContactInformationComponent } from './contact/contact-information/contact-information.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { ContactComponent } from './contact/contact.component';
     ExperienceComponent,
     PortfolioComponent,
     ContactComponent,
+    MessageFormComponent,
+    ContactInformationComponent,
   ],
   imports: [CommonModule, ComponentsRoutingModule, SharedModule],
 })

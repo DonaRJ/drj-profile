@@ -28,10 +28,15 @@
     "@ng-bootstrap/ng-bootstrap": "^6.2.0",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.4.0",
     "chart.js": "^2.9.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "file-saver": "^2.0.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
+    "mongoose": "^5.10.0",
     "ng2-charts": "^2.3.2",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
@@ -53,9 +58,12 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+    "nodemon": "^2.0.4",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
-  }
+  },
+  "author": "Dona Rani Jose",
+  "license": "ISC"
 }

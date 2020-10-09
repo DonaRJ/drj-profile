@@ -1,4 +1,4 @@
-<div class="container">
+<div id="contact-me" class="container">
     <h2 class="card-title h2 my-3 py-3 text-white text-center" translate>contact.title</h2>
     <div class="row">
         <div class="col-sm-6">
@@ -6,28 +6,7 @@
                 <div class="service-icon">
                     <i class="fa fa-envelope-open "></i>
                 </div>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="first-name" placeholder="First Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="last-name" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="phoneNumber" class="form-control" id="phone-number" placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="address" rows="3" placeholder="Address"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                </form>
+                <app-message-form></app-message-form>
             </div>
         </div>
         <div class="col-sm-6">
@@ -35,17 +14,7 @@
                 <div class="service-icon">
                     <i class="fa fa-address-card"></i>
                 </div>
-                <p class="description my-5 py-5">
-                    <span translate><i class="fa fa-envelope" aria-hidden="true"></i>
-                        &nbsp;&nbsp;contact.description.email
-                    </span><br>
-                    <span translate><i class="fa fa-phone" aria-hidden="true"></i>
-                        &nbsp;&nbsp;contact.description.phone
-                    </span><br>
-                    <span translate><i class="fa fa-address-book" aria-hidden="true"></i>
-                        &nbsp;&nbsp;<span [innerHtml]="'contact.description.address' | translate"></span>
-                    </span>
-                </p>
+                <app-contact-information></app-contact-information>
             </div>
         </div>
     </div>
