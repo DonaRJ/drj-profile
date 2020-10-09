@@ -7,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartsModule } from 'ng2-charts';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [NavbarComponent, FooterComponent],
@@ -16,13 +17,17 @@ import { FooterComponent } from './footer/footer.component';
     TranslateModule,
     NgbProgressbarModule,
     ChartsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     NavbarComponent,
     TranslateModule,
     NgbProgressbarModule,
     ChartsModule,
-    FooterComponent
+    FooterComponent,
+    FormsModule,
+    ReactiveFormsModule
   ],
 })
-export class SharedModule {}
+export class SharedModule { }

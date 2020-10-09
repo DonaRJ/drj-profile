@@ -6,19 +6,22 @@ import {
 } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ContactService {
-  apiUrl: string = 'http://localhost:3000/api';
+
+  apiUrl = environment.apiUrl;
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) {}
 
   // Save contact message
   saveMessage(data): Observable<any> {
-    const API_URL = `${this.apiUrl}/create-task`;
+    console.log('data==', data);
+    const API_URL = `${this.apiUrl}/contact`;
     return this.http.post(API_URL, data).pipe(catchError(this.error));
   }
 
